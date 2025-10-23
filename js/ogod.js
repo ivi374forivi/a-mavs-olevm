@@ -2,6 +2,8 @@
  * Changes the background image positions for OGOD pages
  */
 
+var s = false;
+
 function r() {
     $("#bgi").width($(window).width() * 21);
     $("#bgi").height($(window).height() * 21);
@@ -10,7 +12,7 @@ function r() {
 $("#bgi").on("load", (function () {
     $("#bgi").css("visibility", "visible");
     r();
-    let f = 0;
+    var f = 0;
     setInterval(function () {
         $("#bg").css("left", "-" + ((f % 21) * $(window).width()) + "px");
         $("#bg").css("top", "-" + ((Math.floor(f / 21)) * $(window).height()) + "px");
