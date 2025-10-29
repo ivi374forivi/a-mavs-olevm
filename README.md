@@ -37,6 +37,7 @@ This is the website for etceter4.com - a composer of sounds/words/images. Explor
 - `npm run lint:fix` - Auto-fix linting issues
 - `npm run format` - Format code with Prettier
 - `npm run format:check` - Check if code is properly formatted
+- `npm run validate:package-lock` - Validate package-lock.json consistency
 
 ## 🛠 Technology Stack
 
@@ -88,8 +89,9 @@ etceter4/
 The site automatically deploys to GitHub Pages when changes are pushed to the `master` branch. The CI/CD pipeline:
 
 1. **Linting & Formatting** - Ensures code quality
-2. **Security Audit** - Checks for vulnerabilities  
-3. **Deploy** - Publishes to GitHub Pages
+2. **Package Lock Validation** - Verifies dependency integrity
+3. **Security Audit** - Checks for vulnerabilities  
+4. **Deploy** - Publishes to GitHub Pages
 
 ## 🔒 Security
 
@@ -107,7 +109,7 @@ See [SECURITY.md](SECURITY.md) for full security documentation.
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes following the code style guidelines
-4. Run tests: `npm run lint && npm run format:check`
+4. Run tests: `npm run lint && npm run format:check && npm run validate:package-lock`
 5. Commit your changes (`git commit -m 'Add amazing feature'`)
 6. Push to the branch (`git push origin feature/amazing-feature`)
 7. Open a Pull Request

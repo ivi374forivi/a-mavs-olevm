@@ -20,7 +20,8 @@
     "lint": "eslint js/main.js js/page.js js/pageData.js js/images.js js/diary.js js/ogod.js js/analytics.js",
     "lint:fix": "eslint js/main.js js/page.js js/pageData.js js/images.js js/diary.js js/ogod.js js/analytics.js --fix",
     "format": "prettier --write '**/*.{js,css,html,md}'",
-    "format:check": "prettier --check '**/*.{js,css,html,md}'"
+    "format:check": "prettier --check '**/*.{js,css,html,md}'",
+    "validate:package-lock": "node scripts/validate-package-lock.js"
   },
   "repository": {
     "type": "git",
